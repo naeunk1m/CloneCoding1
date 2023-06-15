@@ -1,0 +1,89 @@
+/* 공통 소스 */
+
+body{font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+.wrapper{min-width: 1152px; letter-spacing: -0.05em;}
+
+.blind{position: absolute;
+    width: 1px; height: 1px; 
+    overflow: hidden; 
+    clip: rect(0 0 0 0); 
+    margin: -1px;}
+
+
+.inner{width: 1152px; 
+    margin: auto;
+    box-sizing: border-box;}
+
+.h2-title{font-size: 24px; font-weight: 700;}
+
+
+/* iseoulu */
+.header-bottom .bottom-logo
+{background-image: url(../image/seoul-slogan.png); 
+background-repeat: no-repeat;}
+
+/* 서울특별시 돋보기 메인버튼 이벤트,행사+ 새소식+ 배너버튼 다산콜 */
+.header-top .top-logo a,
+.search-area .btn-search,
+.footer-bottom .call,
+.event-group .link-more,
+.sc-visual .group-visual .btn-nav.prev,
+.sc-visual .group-visual .btn-nav.autoplay,
+.sc-visual .group-visual .btn-nav.autoplay.active,
+.sc-visual .group-visual .btn-nav.next,
+.sc-move .btn-nav.prev,
+.sc-move .btn-nav.next,
+.sc-move .btn-nav.autoplay,
+.sc-move .btn-nav.autoplay.active,
+.sc-new .link-all::after
+{background-image: url(../image/icon_set_common.png); 
+background-repeat: no-repeat;}
+
+/* 주요뉴스 시민참여 */
+.sc-visual .visual-news .visual-area::before,
+.sc-visual .visual-citizen .visual-area::before
+{background-image: url(../image/icon_main_2019.png); 
+background-repeat: no-repeat;}
+
+/* 주요서비스 */
+.sc-service .sort-item .public::before, 
+.sc-service .sort-item .answer::before, 
+.sc-service .sort-item .job::before, 
+.sc-service .sort-item .realestate::before, 
+.sc-service .sort-item .portal::before, 
+.sc-service .sort-item .welfare::before, 
+.sc-service .sort-item .house::before, 
+.sc-service .sort-item .young::before, 
+.sc-service .sort-item .medianhub::before, 
+.sc-service .sort-item .democracy::before,  
+.sc-service .sort-item .ebook::before, 
+.sc-service .sort-item .council::before
+{background-image: url(../image/icon_set_service_202205.png); 
+background-repeat: no-repeat;}
+
+/* 서울로고 sns로고들 */
+.sc-sns .sns-title::after,
+.sc-sns .sns-list .link-sns1.insta::after,
+.sc-sns .sns-list .link-sns1.face::after,
+.sc-sns .sns-list .link-sns1.twit::after,
+.sc-sns .sns-list .link-sns1.blog::after,
+.sc-sns .sns-list .link-sns1.yout::after,
+.sc-sns .sns-list .link-sns1.kakao::after
+{background-image: url(../image/ico_sns_list_202205.png); 
+background-repeat: no-repeat;}
+
+/* 푸터sns 로고 */
+.footer-top .link-sns2.face,
+.footer-top .link-sns2.twit,
+.footer-top .link-sns2.insta,
+.footer-top .link-sns2.kakao,
+.footer-top .link-sns2.yout,
+.footer-top .link-sns2.blog
+{background-image: url(../image/icon_set_sns.png); 
+background-repeat: no-repeat;
+background-position: center;}
