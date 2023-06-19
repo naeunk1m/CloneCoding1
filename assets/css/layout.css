@@ -1,54 +1,47 @@
-.header-top {
+
+.header .header-top {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
-.top-left{
-    display: flex;
+
+.header .header-top .logo {
+    transform: translateY(-5px);
 }
-.top-left .top-logo{
-    width: 97.5px;
-    height: 18.5px;
-    padding: 0;
-    margin-top: 8px;
-}
-.top-left .top-logo a{
+.header .header-top .logo a{
     display: block;
     width: 105px;
     height: 27px;
     background-position: -5px -165px;
 }
 
-.top-left .menu-list{
+
+
+.header .menu-list{
     display: flex;
+    gap: 40px;
 }
-.top-left .menu-item+.menu-item{
-    margin-left: 20px;
-}
-.top-left .menu-item:first-child{
+
+.header .menu-item:first-child{
     position: relative;
     padding-left: 40px;
     margin-left: 30px;
 }
-.top-left .menu-item a{
+.header .menu-item a{
     font-size: 16px;
     line-height: 48px;
     font-weight: 700;
 }
 
-.top-left .menu-item a:hover{
+.header .menu-item a:hover{
     color: #2292e9;
 }
 
-.top-right .service-list{
+.header .service-list{
     display: flex;
+    margin-left: auto;
 }
-.top-right .service-item{
+.header .service-item{
     padding: 0 10px;
-    margin: 0; 
-}
-
-.top-right .service-item:first-child{
-    position: relative;
 }
 
 .top-right .service-item a{
@@ -76,6 +69,7 @@
 .search-area{
     display: flex;
     width: 520px;
+    height: 42px;
     border: 3px solid #2292e9;
     position: absolute;
     left: 50%;
@@ -85,12 +79,12 @@
     box-sizing: border-box;
     line-height: 38px;
     font-size: 14px;
-    padding: 0 10px;
 }
 .search-area .input-text{
     border: 0;
     height: 38px;
-    
+    padding: 0 10px;
+    letter-spacing: normal;
 }
 .search-area .input-text::placeholder{
     color: #2292e9;
@@ -129,8 +123,10 @@
     height: 21px;
     border-color: #afcfea;
     color: #1e6cb3;
+    appearance: none;
     font-size: 12px;
     padding: 0 0 0 2px;
+    line-height: 21px;
     box-sizing: border-box;
     appearance: none;
     background: url(../image/bg_select_arrow_m.png) no-repeat 96% center;
@@ -153,31 +149,34 @@
     margin-top: 34px;
     vertical-align: top;
 }
-.weather-icon {
-    width: 58px;
-    height: 47px;
+
+.weather-area .img-box {
+    margin-left: 3px;
+    margin-top: 4px;
 }
-.weather-list {
-    margin-bottom: 10px;
-    margin-left: 20px;
+.weather-area .img-box img {}
+.weather-area .desc-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 5px;
 }
-.weather-list .weather-bottom{
-    display: block;
-    margin-top: 12px;
+.weather-area .temp-box {
+    line-height: 16px;
+    display: flex; 
 }
-.weather-area .temp{
+.weather-area .temp-box .temp {
     font-size: 25px;
     margin-right: 5px;
     font-weight: bold;
 }
-.weather-area .condition{
+.weather-area .temp-box .desc{
     font-size: 16px;
-    letter-spacing: -0.1em;
 }
-.weather-area .dust{
-    font-size: 13px;
-    letter-spacing: -1px;
+.weather-area .dust-box {
+    margin-top: 7px;
 }
+.weather-area .dust-box .dust {}
 
 
 /* 배너 */
@@ -294,6 +293,7 @@
     margin-left: 600px;
     transition: 1s;
     z-index: 100000;
+    bottom: -98px;
 }
 
 .front-btn.show {

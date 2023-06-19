@@ -1,10 +1,35 @@
-/* 기본 리셋값 */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.eot'); /* IE9 Compat Modes */
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 400
+}
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.eot'); /* IE9 Compat Modes */
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 700
+}
+@font-face {
+    font-family: 'Nanum Gothic';
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.eot'); /* IE9 Compat Modes */
+    src: url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.woff2') format('woff2'), /* Super Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.woff') format('woff'), /* Pretty Modern Browsers */
+            url('https://www.seoul.go.kr/res_newseoul/fonts/NanumGothic-ExtraBold.ttf')  format('truetype'); /* Safari, Android, iOS */
+    font-weight: 800
+}
+
+
+/* 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,7 +54,10 @@ time, mark, audio, video {
 	line-height: 1.35em;
 	font-size: 14px;
 }
-/* HTML5 display-role reset for older browsers */
+
+main {
+	letter-spacing: -0.05em;
+}
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -63,10 +91,31 @@ a {
 	text-decoration: none;
 }
 
-img{max-width: 100%; vertical-align: top;}
+img{max-width: 100%; vertical-align: top;} */
 
-input, /* select, */ button{font: inherit; color:inherit;
+input, select, button{font: inherit; color:inherit;
 			border:0;
 			background: transparent;
 			-webkit-appearance: none;
-			cursor: pointer;}
+			cursor: pointer;} 
+
+
+*{margin:0;padding:0;font:inherit;color:inherit;}
+*, :after, :before {box-sizing:border-box;flex-shrink:0;}
+:root {-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%;text-size-adjust:100%;cursor:default;line-height:1.5;overflow-wrap:break-word;-moz-tab-size:4;tab-size:4}
+html, body {height:100%;}
+img, picture, video, canvas, svg {display: block;max-width:100%;}
+button {background:none;border:0;cursor:pointer;}
+a {text-decoration:none}
+table {border-collapse:collapse;border-spacing:0}
+ul{list-style: none;}
+fieldset{border: 0;}
+
+body{
+	font-size: 14px;
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #222;
+    background: #fff;
+	-webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+}

@@ -1,10 +1,6 @@
 /* 공통 소스 */
 
-body{font-size: 14px;
-    font-family: 'Nanum Gothic', sans-serif;
-    color: #222;
-    background: #fff;
-}
+
 
 .wrapper{min-width: 1152px; letter-spacing: -0.05em;}
 
@@ -28,14 +24,15 @@ body{font-size: 14px;
 background-repeat: no-repeat;}
 
 /* 서울특별시 돋보기 메인버튼 이벤트,행사+ 새소식+ 배너버튼 다산콜 */
-.header-top .top-logo a,
+.header .header-top .logo a,
 .search-area .btn-search,
 .footer-bottom .call,
 .event-group .link-more,
+/* 
 .sc-visual .group-visual .btn-nav.prev,
 .sc-visual .group-visual .btn-nav.autoplay,
 .sc-visual .group-visual .btn-nav.autoplay.active,
-.sc-visual .group-visual .btn-nav.next,
+.sc-visual .group-visual .btn-nav.next, */
 .sc-move .btn-nav.prev,
 .sc-move .btn-nav.next,
 .sc-move .btn-nav.autoplay,
